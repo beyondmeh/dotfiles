@@ -129,3 +129,9 @@ alias stop='sudo systemctl stop '
 alias restart='sudo systemctl restart '
 alias status='systemctl status '
 alias syslog='journalctl -u '
+
+################################################################################
+# simplify command that are versioned
+##
+
+have jekyll.ruby2.7 && alias jekyll='jekyll.ruby2.7'
