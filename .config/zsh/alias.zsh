@@ -34,7 +34,7 @@ have pydf && alias df='pydf'
 have ncdu && alias du='ncdu'
 have gpg2 && alias gpg='gpg2'
 have curl && alias wget='curl'
-have micro && alias nano='micro'
+have nvim && alias nano='nvim'
 
 ################################################################################
 # aliases for Linux programs to point to the FreeBSD alternate command
