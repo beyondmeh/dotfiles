@@ -36,7 +36,6 @@ if [ -f "${HOME}/.zgen/zgen.zsh" ]; then
 		zgen oh-my-zsh plugins/command-not-found
 		zgen oh-my-zsh plugins/pass
 		zgen oh-my-zsh plugins/compleat
-		zgen oh-my-zsh plugins/yarn
 		zgen oh-my-zsh plugins/wd
 		zgen oh-my-zsh plugins/dotenv
 		zgen oh-my-zsh plugins/gitfast
