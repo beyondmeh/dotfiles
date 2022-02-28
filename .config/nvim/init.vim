@@ -8,6 +8,8 @@ set updatetime=250      " make gitgutter more responsive
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'airblade/vim-gitgutter'
+Plug 'mechatroner/rainbow_csv'
+Plug 'elzr/vim-json'
 call plug#end()
 
 
