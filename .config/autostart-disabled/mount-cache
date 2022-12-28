@@ -5,9 +5,9 @@ cat <<HELP
 Create folders and files expected to be in ~/.cache normally
 
 
-https://github.com/keithieopia/bin/
+https://github.com/beyondmeh/bin/
 
-Copyright (c) 2016 - 2018 Timothy Keith
+Copyright (c) 2016 - 2023 BeyondMeh
 Licensed under the MIT license.
 HELP
 }
