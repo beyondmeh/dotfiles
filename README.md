@@ -12,7 +12,7 @@ I have in my `$PATH`. *You know... dotfiles*.
 
 #### Table of Contents
 - [Overview](#overview)
-- `~/bin` **[Shell Script Listings](https://github.com/keithieopia/dotfiles/tree/master/bin#dotfiles-bin)**
+- `~/bin` **[Shell Script Listings](https://github.com/beyondmeh/dotfiles/tree/master/bin#dotfiles-bin)**
 - [Installing](#install)
 - [Feedback](#feedback)
 - [Author](#author)
@@ -45,22 +45,6 @@ Here's a high level overview if you just want to see what I use:
 Installation and day-to-day management requires only git as a dependency. No
 other tools or symlinking are required:
 
-
-### Install
-
-1. Make sure both `curl` and `git` are installed.
-2. Run:
-
-```console
-$ curl -L dot.keithieopia.com | sh
-```
-
-#### But `curl | sh` is insecure!
-
-You're absolutely right. [dot.keithieopia.com](http://dot.keithieopia.com) serves 
-this [deploy.sh](https://github.com/keithieopia/dotfiles/blob/deploy/deploy.sh) script 
-(available in the deploy branch of this repo). `deploy.sh` basically does the following:
-
 ```console
 $ cd ~
 $ git clone --no-checkout https://github.com/keithieopia/dotfiles.git .
@@ -71,27 +55,14 @@ $ git reset --hard
 before running `git reset --hard`. Or you can use `deploy.sh`, which will sanely warn before clobbering.
 
 
-## Feedback
-I would love your feedback! If you found any of these configs or scripts
-useful, please send me [an email](mailto:timothykeith@gmail.com). For
-the privacy conscious, feel free to encrypt any messages using my
-[PGP key](https://gist.githubusercontent.com/keithieopia/434f3575ec1f020d6589a4c01dc0847e/raw/2e0749f2966ff501ee28797a926229c081f7e652/timothykeith.pub.asc):
-
-> 46E6 9F69 90C1 DE8C 9791 88EE 94A4 E2D4 *6B32 AA11*
-
-To import it into your keyring:
-```console
-$ curl https://gist.githubusercontent.com/keithieopia/434f3575ec1f020d6589a4c01dc0847e/raw/2e0749f2966ff501ee28797a926229c081f7e652/timothykeith.pub.asc | gpg --import -
-```
-
 ### Bug Reports
-Submit bug reports via GitHub's [Issue Tracker](https://github.com/keithieopia/dotfiles/issues)
+Submit bug reports via GitHub's [Issue Tracker](https://github.com/beyondmeh/dotfiles/issues)
 
 
 ## Author
 Copyright &copy; 2016 - 2021 BeyondMeh, except where otherwise noted.
 
-Licensed under the [ISC license](https://github.com/keithieopia/dotfiles/blob/master/LICENSE).
+Licensed under the [ISC license](https://github.com/beyondmeh/dotfiles/blob/master/LICENSE).
 
 *This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.*
