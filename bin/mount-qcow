@@ -10,9 +10,9 @@ Mount a partition in a qcow2 image
 usage: $(basename "$0") IMAGE PARTITION
 
 
-https://github.com/keithieopia/bin/
+https://github.com/beyondmeh/bin/
 
-Copyright (c) 2019 Timothy Keith
+Copyright (c) 2019-2023 BeyondMeh
 Licensed under the MIT license.
 HELP
 
