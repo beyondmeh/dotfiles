@@ -18,9 +18,9 @@ usage: $(basename "$0") OPTION or FILE
    *        : Tries to erase a given file
 
 
-https://github.com/keithieopia/bin/
+https://github.com/beyondmeh/bin/
 
-Copyright (c) 2016 Timothy Keith
+Copyright (c) 2016-2023 BeyondMeh
 Licensed under the MIT license.
 HELP
 }
