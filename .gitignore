@@ -42,3 +42,5 @@ lost+found/
 .z
 .zcompdump*
 .zgen/
+.bundle/
+.config/composer
