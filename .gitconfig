@@ -1,8 +1,3 @@
-[user]
-    email = timothykeith@gmail.com
-    name = Timothy Keith
-    signingkey = 46E69F6990C1DE8C979188EE94A4E2D46B32AA11
-
 [color]
     diff = auto
     status = auto
