@@ -47,7 +47,7 @@ other tools or symlinking are required:
 
 ```console
 $ cd ~
-$ git clone --no-checkout https://github.com/keithieopia/dotfiles.git .
+$ git clone --no-checkout https://github.com/beyondmeh/dotfiles.git .
 $ git reset --hard
 ```
 
