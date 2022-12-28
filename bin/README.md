@@ -3,7 +3,7 @@ These are the shell scripts I have in my `$PATH`. Most are quite useful,
 but some are simply novelties to see if a certain problem could be
 solved in a humble shell script.
 
-You may want to visit the main repo [README.md](https://github.com/keithieopia/dotfiles/blob/master/README.md)
+You may want to visit the main repo [README.md](https://github.com/beyondmeh/dotfiles/blob/master/README.md)
 first, if you came here directly from somewhere else.
 
 ## Table of Contents:
