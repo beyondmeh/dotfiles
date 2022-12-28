@@ -16,9 +16,7 @@ source $HOME/.config/bash/git-prompt.sh
 
 __remote_host() {
     if [ "$SSH_CONNECTION" ]; then
-		echo -n "%{%F{yellow}%}"
-		echo -n "$(whoami)@$(hostname) "
-        echo "%{%f%}"
+	echo -n "$(whoami)@$(hostname) "
     fi
 }
 
