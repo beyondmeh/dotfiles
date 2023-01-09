@@ -34,10 +34,3 @@ if [ -d $HOME/.npm-packages ]; then
 	export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 fi
 
-if type ccache > /dev/null; then
-    export PATH="/usr/lib/ccache/bin/:$PATH"
-fi
-
-if type byobu > /dev/null; then
-	_byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true
-fi
