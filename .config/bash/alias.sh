@@ -33,12 +33,13 @@ have shred && alias shred='shred -fuzvn 1'
 have htop && alias top='htop'
 have btop && alias top='btop'
 have pydf && alias df='pydf'
+have dfrs && alias df='dfrs'
 have ncdu && alias du='ncdu'
 have gpg2 && alias gpg='gpg2'
-have curl && alias wget='curl'
 have nvim && alias nano='nvim'
 have colordiff && alias diff='colordiff'
 have pygmentize && alias cat='pygmentize -O style=monokai -f console256 -g '
+have batcat && alias cat='batcat'
 
 ################################################################################
 # aliases for Linux programs to point to the FreeBSD alternate command
