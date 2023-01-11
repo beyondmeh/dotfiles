@@ -28,16 +28,15 @@ know what that entails. *Here be dragons!*
 <a name="overview"></a>
 Here's a high level overview if you just want to see what I use:
 
-| Category                | Program                                                                     |
-| ----------------------- | --------------------------------------------------------------------------- |
-| **Distro**:             | [openSUSE Tumbleweed](https://get.opensuse.org/tumbleweed/)                 |
-| **Desktop Environment** | [KDE Plasma](https://kde.org/plasma-desktop)                                |
-| **Browser**:            | [Firefox](https://www.mozilla.org/en-US/firefox/new/)                       |
-| **Shell**:              | [Zsh](http://zsh.sourceforge.net/)                                          |
-| **Shell Plugins**:      | [zgen](https://github.com/tarjoilija/zgen) & [Oh-My-Zsh](http://ohmyz.sh/)  |
-| **Shell Theme**:        | [Solarized Dark](https://ethanschoonover.com/solarized/)                    |
-| **Editor**:             | [Neovim](https://neovim.io/) & [kate](https://kate-editor.org/)             |
-| **IDE**:                | [Visual Studio Code](https://code.visualstudio.com/)                        |
+| Category                | Program                                                  |
+| ----------------------- | -------------------------------------------------------- |
+| **Distro**:             | [Ubuntu Budgie](https://ubuntubudgie.org/)               |
+| **Desktop Environment** | [Budgie](https://blog.buddiesofbudgie.org/)              |
+| **Browser**:            | [Google Chrome](https://www.google.com/chrome/)          |
+| **Shell**:              | [Bash](https://www.gnu.org/software/bash/)               |
+| **Shell Theme**:        | [Solarized Dark](https://ethanschoonover.com/solarized/) |
+| **Editor**:             | [Neovim](https://neovim.io/)                             |
+| **IDE**:                | [Visual Studio Code](https://code.visualstudio.com/)     |
 
 ## Installation / Managing
 <a name="install"></a>
@@ -60,7 +59,7 @@ Submit bug reports via GitHub's [Issue Tracker](https://github.com/beyondmeh/dot
 
 
 ## Author
-Copyright &copy; 2016 - 2021 BeyondMeh, except where otherwise noted.
+Copyright &copy; 2016 - 2023 BeyondMeh, except where otherwise noted.
 
 Licensed under the [ISC license](https://github.com/beyondmeh/dotfiles/blob/master/LICENSE).
 
