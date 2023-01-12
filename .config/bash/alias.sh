@@ -41,6 +41,8 @@ have colordiff && alias diff='colordiff'
 have pygmentize && alias cat='pygmentize -O style=monokai -f console256 -g '
 have batcat && alias cat='batcat'
 have bcat && alias cat='bcat'
+have nala && alias apt='nala'
+
 ################################################################################
 # aliases for Linux programs to point to the FreeBSD alternate command
 ##
