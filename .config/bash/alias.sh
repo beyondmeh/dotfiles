@@ -100,6 +100,7 @@ alias dirsize="pwd && du -h . 2>/dev/null | tail -1 | awk '{print $1}'"
 alias biggest='find . -type f -exec du -a {} + | sort -n -r | awk '\''{$1=""}1'\'' | head -25'
 alias duless='du -ach 2>/dev/null | sort -h | less'
 alias wifi-scan='nmcli dev wifi list'
+alias fs='du -h | tail -1'
 
 # git
 alias git-loc="git ls-files | xargs wc -l | tail -1 | sed 's/total/lines of code/g'"
