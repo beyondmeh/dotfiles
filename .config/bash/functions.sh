@@ -19,12 +19,6 @@ function dpkg() {
 	fi
 }
 
-function remove-old-kernels() {
-	if grep -q fedora /etc/os-release; then
-		sudo dnf remove $(dnf repoquery --installonly --latest-limit=-2 -q)
-	fi
-}
-
 function hexview() {
 	hexdump -vC "$@" | less
 }
