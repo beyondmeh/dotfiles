@@ -36,4 +36,5 @@ __prompt_command() {
 	PS1="$PS1\[$(tput sgr0)\] "
 }
 
+git-stats
 show_fortune
