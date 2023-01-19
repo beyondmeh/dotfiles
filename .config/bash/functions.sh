@@ -1,13 +1,17 @@
 # quicker cd'ing
 function cdup() {
-    [[ -z $@ ]] && echo -e "cd out of directory quicker\nusage: cdup <#ofdirs>" && return 1
+  [[ -z $@ ]] && echo -e "cd out of directory quicker\nusage: cdup <#ofdirs>" && return 1
 
-    local x="";
-    for i in $(seq $1); do
-        x="$x../"
-    done
+  local x="";
+  for i in $(seq $1); do
+    x="$x../"
+  done
 
-    cd $x
+  cd $x
+}
+
+function md() {
+  mkdir -p "$@" && cd "$_";
 }
 
 # auto sudo dpkg if needed
