@@ -131,6 +131,10 @@ alias restart='sudo systemctl restart '
 alias status='systemctl status '
 alias syslog='journalctl -u '
 
+# ciphers
+alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+alias cipher="tac | rev | tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+
 ################################################################################
 # simplify command that are versioned
 ##
