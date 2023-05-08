@@ -1,6 +1,9 @@
 # absolutely haram
 .emacs
 
+# macos
+.Trash
+
 # other stuff...
 *~
 .bash_history
