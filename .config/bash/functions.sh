@@ -169,7 +169,7 @@ function check-port() {
     return 1
   fi
 
-  if [[ ! -v $2 ]]; then
+  if [ ! -v $2 ]; then
     2=$1
     1=127.0.0.1
   fi
@@ -231,7 +231,7 @@ function zero-drive-confirm() {
 show_fortune() {
 if type fortune >/dev/null 2>&1; then
 	tput setaf 5
-	fortune -as
+	fortune -s
 	tput sgr0
 	echo
 fi

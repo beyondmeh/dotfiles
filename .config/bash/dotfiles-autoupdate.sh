@@ -4,8 +4,8 @@ TIME=$(date +%s)
 # find last modification time for a normal git repo,
 # which should match it's last fetch
 if [ -f "$HOME/.git/FETCH_HEAD" ]; then
-	if uname | grep -q FreeBSD; then
-		# BSD
+	if uname | grep -q 'FreeBSD\|Darwin'; then
+		# BSD / macOS
 		LAST_FETCH=$(stat -f %m "$HOME/.git/FETCH_HEAD")
 	else
 		# GNU coreutils
