@@ -36,5 +36,9 @@ __prompt_command() {
 	PS1="$PS1\[$(tput sgr0)\] "
 }
 
-git-stats
+if uname -a | grep Darwin > /dev/null; then
+  eval $(/opt/homebrew/bin/brew shellenv)
+  export BASH_SILENCE_DEPRECATION_WARNING=1
+fi
+
 show_fortune
