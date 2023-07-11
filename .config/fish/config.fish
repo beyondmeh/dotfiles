@@ -16,8 +16,20 @@ if status is-interactive
     alias ls="exa"
   end
 
+  if type -q ncdu
+    alias du="ndcu"
+  end
+
+  if type -q gping
+    alias ping="gping"
+  end
+
   if type -q bat
     alias cat="bat"
+  end
+
+  if type -q btop
+    alias top="btop"
   end
 
   if type -q most
