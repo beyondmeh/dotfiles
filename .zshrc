@@ -88,3 +88,5 @@ if tty | grep -q /dev/pts; then
 fi
 
 show_prompt
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

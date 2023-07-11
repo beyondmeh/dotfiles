@@ -42,3 +42,5 @@ if uname -a | grep Darwin > /dev/null; then
 fi
 
 show_fortune
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
