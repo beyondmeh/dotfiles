@@ -16,8 +16,12 @@ if status is-interactive
     alias ls="exa"
   end
 
+  if type -q dc3dd
+    alias dd="dc3dd"
+  end
+
   if type -q ncdu
-    alias du="ndcu"
+    alias du="ncdu"
   end
 
   if type -q gping
@@ -34,6 +38,10 @@ if status is-interactive
 
   if type -q most
     set -x PAGER most
+  end
+
+  if type -q colordiff
+    alias diff="colordiff"
   end
 
   alias s "sudo"
