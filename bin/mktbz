@@ -1,0 +1,4 @@
+#!/bin/sh
+
+tar cf "archive-$(date +%Y%m%d).tbz" --use-compress-program=$(which pbzip2) "$@"
+
