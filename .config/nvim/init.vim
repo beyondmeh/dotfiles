@@ -1,4 +1,10 @@
 start                   " insert mode by default
+set textwidth=72
+set tabstop=4
+set shiftwidth=0
+set expandtab           " convert tabs to spaces
+set autoindent
+set hlsearch            " highlight search results
 set number              " display line numbers
 set ignorecase          " set search to case insensitive
 set smartcase           " except when the search has capital letters
