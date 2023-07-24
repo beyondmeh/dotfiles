@@ -14,7 +14,7 @@
 [difftool]
     prompt = false
 [diff]
-    tool = vimdiff
+	tool = colordiff
 
 [receive]
     denyCurrentBranch = updateInstead
