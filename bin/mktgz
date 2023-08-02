@@ -1,0 +1,5 @@
+#!/bin/sh
+
+SIZE=$(/usr/bin/du -sk "$@" | cut -f 1)
+tar cvf - "$@" | pv -p -s ${SIZE}k | pbzip2 -c > "archive-$(date +%Y%m%d).txz"
+
