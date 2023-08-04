@@ -1,9 +1,15 @@
 
+set -x -g LC_ALL en_US.UTF-8
+set -x -g LANG en_US.UTF-8
+
 if status is-interactive
   # Commands to run in interactive sessions can go here
 
   # Set env variables
   set -a PATH ~/bin
+  set -a PATH ~/.local/bin
+  set -a PATH /opt/homebrew/bin
+  set -a PATH /usr/local/bin  
 
   if type -q neovim
     set -x EDITOR neovim
@@ -38,6 +44,18 @@ if status is-interactive
     end
   end
 
+  function md --wraps mkdir -d "Create a directory and cd into it"
+    command mkdir -p $argv
+    if test $status = 0
+      switch $argv[(count $argv)]
+        case '-*'
+        case '*'
+          cd $argv[(count $argv)]
+          return
+      end
+    end
+  end
+
   # Prefered programs
   alias nano "micro"
   alias ls "exa"
@@ -48,11 +66,12 @@ if status is-interactive
   alias top "btop"
   alias diff "colordiff"
   alias wget "curl -O"
-
+  alias vi $EDITOR
+  alias vim $EDITOR
+  
   # new aliases
   alias s "sudo"
   alias sl "ls"
-  alias md "mkdir -p"
   alias rd "rmdir"
   alias mv "mv -i"
   alias cp "cp -i"
@@ -63,7 +82,7 @@ if status is-interactive
   alias rmdstore "find . -name '*.DS_Store' -type f -ls -delete"
 
   # print motd-like
-  figlet -f mini $(hostname)
+  #figlet -f mini $(hostname)
  
   if type -q fortune
     tput setaf 5
