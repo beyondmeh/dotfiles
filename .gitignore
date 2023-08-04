@@ -3,6 +3,7 @@
 
 # macos
 .Trash
+.DS_Store
 
 # other stuff...
 *~
@@ -24,8 +25,6 @@ bin/piu
 .config/user-dirs.locale
 .config/vlc/
 .config/xsettingsd/
-Desktop/
-Documents/
 .esd_auth
 .fonts
 .gem
@@ -33,7 +32,7 @@ Documents/
 .google_authenticator
 .gtkrc-2.0
 .i18n
-.kde4/        
+.kde4/
 .lesshst
 .local/bin
 .local/share/
@@ -47,3 +46,17 @@ lost+found/
 .zgen/
 .bundle/
 .config/composer
+.zsh_history
+
+Desktop/
+Documents/
+Applications (Parallels)/
+Applications/
+Downloads/
+Library/
+Movies/
+Music/
+OneDrive
+Parallels/
+Pictures/
+Public/
