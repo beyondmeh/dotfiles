@@ -31,5 +31,20 @@
     helper = cache
 [core]
     editor = nvim
+	excludesfile = /Users/timothy/.gitignore_global
 [protocol]
 	version = 2
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = beyondmeh
+	email = 224660+beyondmeh@users.noreply.github.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Users/timothy/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
