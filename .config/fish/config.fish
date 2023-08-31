@@ -10,6 +10,7 @@ if status is-interactive
   set -a PATH ~/.local/bin
   set -a PATH /opt/homebrew/bin
   set -a PATH /usr/local/bin  
+  set -a PATH ~/Library/Python/3.9/bin
 
   if type -q neovim
     set -x EDITOR neovim
