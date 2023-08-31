@@ -4,20 +4,9 @@
     branch = auto
     interactive = auto
     ui = true
-
-[merge]
-    tool = sublimerge
-    
-[mergetool "sublimerge"]
-	cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
-	trustExitCode = false
-
-[diff]
-	tool = sublimerge
-
-[difftool "sublimerge"]
-	cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
-
+[core]
+	editor = subl -n -w
+	
 [receive]
     denyCurrentBranch = updateInstead
     
@@ -44,3 +33,16 @@
 [user]
 	name = beyondmeh
 	email = me@beyondmeh.com
+[mergetool "smerge"]
+	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
+[merge]
+	tool = smerge
+[difftool "smerge"]
+	cmd = smerge \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = smerge
