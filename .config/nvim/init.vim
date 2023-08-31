@@ -14,7 +14,6 @@ set nocompatible
 filetype plugin on
 
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'altercation/vim-colors-solarized'
 Plug 'airblade/vim-gitgutter'
 Plug 'mechatroner/rainbow_csv'
 Plug 'elzr/vim-json'
@@ -22,14 +21,14 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'chrisbra/Colorizer'
 Plug 'sheerun/vim-polyglot'
+Plug 'shaunsingh/nord.nvim'
 call plug#end()
 
 
 " color scheme theme
 syntax enable
-set background=dark
-let g:solarized_termtrans = 1   " fixes ugly grey bg
-colorscheme solarized
+
+colorscheme nord
 
 
 let g:colorizer_auto_color = 1
