@@ -6,15 +6,17 @@
     ui = true
 
 [merge]
-    tool = vimdiff
-[mergetool]
-    prompt = true
-[mergetool "vimdiff"]
-    cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-[difftool]
-    prompt = false
+    tool = sublimerge
+    
+[mergetool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+	trustExitCode = false
+
 [diff]
-	tool = colordiff
+	tool = sublimerge
+
+[difftool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
 
 [receive]
     denyCurrentBranch = updateInstead
@@ -41,10 +43,4 @@
 	required = true
 [user]
 	name = beyondmeh
-	email = 224660+beyondmeh@users.noreply.github.com
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Users/timothy/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	email = me@beyondmeh.com
