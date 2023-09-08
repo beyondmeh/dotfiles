@@ -57,9 +57,14 @@ if status is-interactive
     end
   end
 
+  if type -q exa
+    alias ls "exa"
+  else if type -q exz
+    alias ls "eza"
+  end
+
   # Prefered programs
   alias nano "micro"
-  alias ls "exa"
   alias dd "dc3dd"
   alias du "ncdu" 
   alias ping "gping"
