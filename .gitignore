@@ -26,7 +26,6 @@ bin/piu
 .config/vlc/
 .config/xsettingsd/
 .esd_auth
-.fonts
 .gem
 .gnupg
 .google_authenticator

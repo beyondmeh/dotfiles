@@ -22,6 +22,9 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'chrisbra/Colorizer'
 Plug 'sheerun/vim-polyglot'
 Plug 'shaunsingh/nord.nvim'
+Plug 'folke/zen-mode.nvim', {'branch': 'main'}
+Plug 'folke/todo-comments.nvim', {'branch': 'main'}
+Plug 'tenxsoydev/tabs-vs-spaces.nvim', {'branch': 'main'}
 call plug#end()
 
 
