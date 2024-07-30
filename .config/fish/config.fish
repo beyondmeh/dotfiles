@@ -81,8 +81,10 @@ if status is-interactive
   alias rd "rmdir"
   alias mv "mv -i"
   alias cp "cp -i"
-  
-  alias ip "dig +short myip.opendns.com @resolver1.opendns.com"
+
+  alias ipv4 "dig -4 +short myip.opendns.com @resolver1.opendns.com"  
+  alias ipv6 "dig -6 +short myip.opendns.com @resolver1.opendns.com"
+  alias ip "ipv4 && ipv6"
   alias dig "dig +nocmd any +multiline +noall +answer"
 
   alias rmdstore "find . -name '*.DS_Store' -type f -ls -delete"
@@ -97,5 +99,7 @@ if status is-interactive
   end      
   
 end
+
+test fzf ; and fzf --fish | source
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
