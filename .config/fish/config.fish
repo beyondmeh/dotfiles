@@ -12,15 +12,7 @@ if status is-interactive
   set -a PATH /usr/local/bin  
   set -a PATH ~/Library/Python/3.9/bin
 
-  if type -q neovim
-    set -x EDITOR neovim
-  else if type -q nvim
-    set -x EDITOR nvim
-  else if type -q micro
-    set -x EDITOR micro
-  else
-    set -x EDITOR vi
-  end
+  set -x EDITOR vim
 
   set -x PAGER less
   if type -q most
@@ -74,7 +66,7 @@ if status is-interactive
   alias wget "curl -O"
   alias vi $EDITOR
   alias vim $EDITOR
-  
+
   # new aliases
   alias s "sudo"
   alias sl "ls"
