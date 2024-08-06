@@ -34,8 +34,10 @@ Here's a high level overview if you just want to see what I use:
 | **Browser**:            | [Safari](https://www.apple.com/safari/) + [StopTheMadness Pro](https://apps.apple.com/app/stopthemadness-pro/id6471380298) + [Wipr](https://apps.apple.com/us/app/wipr/id1320666476)        |
 | **Shell**:              | [Fish](https://fishshell.com) + [Starship](https://starship.rs)              |
 | **Shell Theme**:        | [Dracula](https://draculatheme.com) |
+| **Shell Font**: | [Iosevka](https://typeof.net/Iosevka/) |
 | **Editor**:             | [Helix](https://helix-editor.com)                             |
 | **IDE**:                | [Sublime Text](https://www.sublimetext.com)     |
+| **IDE Font**: | [Fira Code](https://github.com/tonsky/FiraCode) |
 
 ## Installation / Managing
 <a name="install"></a>
