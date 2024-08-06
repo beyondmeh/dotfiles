@@ -4,15 +4,16 @@ set -x -g LANG en_US.UTF-8
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
-    fish_config theme choose "Dracula Official"
-    starship init fish | source
-
     # Set env variables
     set -a PATH ~/bin
     set -a PATH ~/.local/bin
     set -a PATH /opt/homebrew/bin
     set -a PATH /usr/local/bin
     set -a PATH ~/Library/Python/3.9/bin
+
+    # theme
+    fish_config theme choose "Dracula Official"
+    starship init fish | source
 
     # Set perferred editors and pager 
     if type -q hx
