@@ -4,8 +4,6 @@
     branch = auto
     interactive = auto
     ui = true
-[core]
-	editor = subl -n -w
 	
 [receive]
     denyCurrentBranch = updateInstead
@@ -21,7 +19,7 @@
 [credential]
     helper = cache
 [core]
-    editor = nvim
+    editor = subl -n -w
 	excludesfile = /Users/timothy/.gitignore_global
 [protocol]
 	version = 2
