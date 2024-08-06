@@ -30,13 +30,12 @@ Here's a high level overview if you just want to see what I use:
 
 | Category                | Program                                                  |
 | ----------------------- | -------------------------------------------------------- |
-| **Distro**:             | [Ubuntu Budgie](https://ubuntubudgie.org/)               |
-| **Desktop Environment** | [Budgie](https://blog.buddiesofbudgie.org/)              |
-| **Browser**:            | [Google Chrome](https://www.google.com/chrome/)          |
-| **Shell**:              | [Bash](https://www.gnu.org/software/bash/)               |
-| **Shell Theme**:        | [Solarized Dark](https://ethanschoonover.com/solarized/) |
-| **Editor**:             | [Neovim](https://neovim.io/)                             |
-| **IDE**:                | [Visual Studio Code](https://code.visualstudio.com/)     |
+| **OS**:             | [macOS Sonoma](https://www.apple.com/macos/sonoma/)               |             |
+| **Browser**:            | [Safari](https://www.apple.com/safari/) + [StopTheMadness Pro](https://apps.apple.com/app/stopthemadness-pro/id6471380298) + [Wipr](https://apps.apple.com/us/app/wipr/id1320666476)        |
+| **Shell**:              | [Fish](https://fishshell.com) + [Starship](https://starship.rs)              |
+| **Shell Theme**:        | [Dracula](https://draculatheme.com) |
+| **Editor**:             | [Helix](https://helix-editor.com)                             |
+| **IDE**:                | [Sublime Text](https://www.sublimetext.com)     |
 
 ## Installation / Managing
 <a name="install"></a>
@@ -59,7 +58,7 @@ Submit bug reports via GitHub's [Issue Tracker](https://github.com/beyondmeh/dot
 
 
 ## Author
-Copyright &copy; 2016 - 2023 BeyondMeh, except where otherwise noted.
+Copyright &copy; 2016 - 2024 BeyondMeh, except where otherwise noted.
 
 Licensed under the [ISC license](https://github.com/beyondmeh/dotfiles/blob/master/LICENSE).
 
