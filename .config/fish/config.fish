@@ -82,7 +82,6 @@ if status is-interactive
     end
 
     # Prefered programs
-    alias nano micro
     alias dd dc3dd
     alias du ncdu
     alias ping gping
@@ -92,7 +91,10 @@ if status is-interactive
     alias wget "curl -O"
     alias vi $EDITOR
     alias vim $EDITOR
-
+    alias nano $EDITOR
+    alias e $EDITOR
+    alias se "sudo $EDITOR"
+            
     # new aliases
     alias s sudo
     alias sl ls
